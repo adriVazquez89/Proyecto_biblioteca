@@ -16,6 +16,18 @@ public class Llibre {
 
     public boolean esPrestat() { return prestat; }
 
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
+    public void setPrestat(boolean prestat) {
+        this.prestat = prestat;
+    }
+
+    public void setTitol(String titol) {
+        this.titol = titol;
+    }
+
     public void prestar() { prestat = true; }
 
     public void retornar() { prestat = false; }
