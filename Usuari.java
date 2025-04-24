@@ -9,8 +9,10 @@ public class Usuari {
     this.llibresPrestats = new ArrayList<>();
 }
 public String getNom() { return nom; }
-public List<Llibre> getLlibresPrestats() { return llibresPrestats; }
-public void afegirLlibre(Llibre llibre) { llibresPrestats.add(llibre); }
-public void retornarLlibre(Llibre llibre) { llibresPrestats.remove(llibre); }
 
+public List<Llibre> getLlibresPrestats() { return llibresPrestats;}
+
+public void afegirLlibre(Llibre llibre) { llibresPrestats.add(llibre);}
+
+public void retornarLlibre(Llibre llibre) { llibresPrestats.remove(llibre);}
 }

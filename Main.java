@@ -4,7 +4,7 @@ public class Main {
 
         Biblioteca biblioteca = new Biblioteca();
 
-        Llibre llibre1 = new Llibre("1984", "George Orwell");
+        Llibre llibre1 = new Llibre("Horimiya", "Daisuke Hagiwara");
 
         Llibre llibre2 = new Llibre("El petit príncep", "Antoine de Saint-Exupéry");
 
