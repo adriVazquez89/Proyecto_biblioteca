@@ -4,7 +4,6 @@ import java.util.List;
 public class Usuari {
     private String nom;
     private List<Llibre> llibresPrestats;
-<<<<<<< HEAD
 
     public Usuari(String nom) {
         this.nom = nom;
@@ -50,17 +49,3 @@ public class Usuari {
         return llibresPrestats.contains(llibre);
     }
 }
-=======
-    public Usuari(String nom) {
-    this.nom = nom;
-    this.llibresPrestats = new ArrayList<>();
-}
-public String getNom() { return nom; }
-
-public List<Llibre> getLlibresPrestats() { return llibresPrestats;}
-
-public void afegirLlibre(Llibre llibre) { llibresPrestats.add(llibre);}
-
-public void retornarLlibre(Llibre llibre) { llibresPrestats.remove(llibre);}
-}
->>>>>>> origin/main
