@@ -17,6 +17,7 @@ public class Prestec {
     public Usuari getUsuari() { return usuari; }
     public Llibre getLlibre() { return llibre; }
     public LocalDate getDataRetorn() { return dataRetorn; }
+    public LocalDate getDataPrestec() { return dataPrestec; }
 
     //Quan es demani un llibre es restarà del màxim que es poden agafar
     public void demanarLlibre (int llibresPrestats)
