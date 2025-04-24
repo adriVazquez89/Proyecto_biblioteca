@@ -2,11 +2,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Usuari {
-private String nom;
-private List<Llibre> llibresPrestats;
-public Usuari(String nom) {
-this.nom = nom;
-this.llibresPrestats = new ArrayList<>();
+    private String nom;
+    private List<Llibre> llibresPrestats;
+    public Usuari(String nom) {
+    this.nom = nom;
+    this.llibresPrestats = new ArrayList<>();
 }
 public String getNom() { return nom; }
 public List<Llibre> getLlibresPrestats() { return llibresPrestats; }
