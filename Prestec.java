@@ -5,6 +5,7 @@ public class Prestec {
     private Llibre llibre;
     private LocalDate dataPrestec;
     private LocalDate dataRetorn;
+    private int llibresPrestats = 3; //Llibres màxims que es poden agafar simultàniament
 
     public Prestec(Usuari usuari, Llibre llibre, LocalDate dataPrestec) {
         this.usuari = usuari;
@@ -16,5 +17,18 @@ public class Prestec {
     public Usuari getUsuari() { return usuari; }
     public Llibre getLlibre() { return llibre; }
     public LocalDate getDataRetorn() { return dataRetorn; }
+
+    //Quan es demani un llibre es restarà del màxim que es poden agafar
+    public void demanarLlibre (int llibresPrestats)
+    {
+        if (llibresPrestats > 0)
+        {
+            llibresPrestats--;
+        }
+        else 
+        {
+            System.out.println("No pots agafar més llibres");
+        }
+    }
 
 }
