@@ -28,6 +28,23 @@ public class Llibre {
         this.titol = titol;
     }
 
+    // Funcion modificar el libro, lo modifica, y ya
+    public void modificarLlibre (String titol, String autor, boolean prestat){
+        this.autor = autor;
+        this.titol = titol;
+        this.prestat = prestat;
+
+    }
+
+    // Funcion eliminar, para elimnarlo realmente se haria desde el main pero bueno
+    // yo hago el metodo por si acaso
+    public void eliminarLlibre (){
+        this.autor = null;
+        this.titol = null;
+        this.prestat = false;
+    
+    }
+
     public void prestar() { prestat = true; }
 
     public void retornar() { prestat = false; }
