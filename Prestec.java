@@ -18,6 +18,7 @@ public class Prestec {
     public Llibre getLlibre() { return llibre; }
     public LocalDate getDataRetorn() { return dataRetorn; }
     public LocalDate getDataPrestec() { return dataPrestec; }
+    public int getLlibresPrestats() { return llibresPrestats; }
 
     //Quan es demani un llibre es restarà del màxim que es poden agafar
     public void demanarLlibre (int llibresPrestats)
@@ -29,6 +30,19 @@ public class Prestec {
         else 
         {
             System.out.println("No pots agafar més llibres");
+        }
+    }
+
+    //Quan es torni un llibre es sumarà del màxim que es poden agafar (fins a 3)
+    public void tornarLlibre (int llibresPrestats)
+    {
+        if (llibresPrestats < 3)
+        {
+            llibresPrestats++;
+        }
+        else 
+        {
+            System.out.println("No pots tornar més llibres");
         }
     }
 
