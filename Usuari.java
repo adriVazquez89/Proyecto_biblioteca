@@ -31,6 +31,10 @@ public class Usuari {
         this.nom = nouNom;
     }
 
+    public void eliminarUsuari() {
+        this.nom = null;
+    }
+
     // Aquest mètode és només un exemple de com eliminar un llibre prestat
     public void eliminarLlibre(Llibre llibre) {
         llibresPrestats.remove(llibre);
