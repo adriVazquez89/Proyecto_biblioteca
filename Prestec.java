@@ -26,7 +26,6 @@ public class Prestec {
         this.llibresPrestats = 1; // Al crear-se el préstec, ja hi ha 1 llibre prestat
     }
 
-    // ---------- Mètodes desenvolupats (obtenir...) ----------
 
     public Usuari obtenirUsuariDelPrestec() {
         return this.usuari;
@@ -48,8 +47,6 @@ public class Prestec {
         return this.llibresPrestats;
     }
 
-    // ---------- Getters clàssics (get...) ----------
-
     public Usuari getUsuari() {
         return usuari;
     }
@@ -69,8 +66,6 @@ public class Prestec {
     public int getLlibresPrestats() {
         return llibresPrestats;
     }
-
-    // ---------- Lògica de préstecs ----------
 
     /**
      * Incrementa en 1 el nombre de llibres prestats, si no s'ha arribat al màxim.
